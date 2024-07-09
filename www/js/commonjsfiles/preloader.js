@@ -1057,7 +1057,7 @@ Game.preloader.prototype = {
                 _this.state.start('practiceModegradeSelectionScreen', true, false);
             } else {
                 console.log("Offline app - its Preload");
-                window.baseUrl = cordova.file.externalRootDirectory + "Android/data/com.Akshara.BBplusplusOffMarG7/Files/Download/.gameFilesBB++V10_2/www/";
+                window.baseUrl = cordova.file.externalRootDirectory + "Android/data/com.Akshara.BBplusplusOffOdiG7/Files/Download/.gameFilesBB++V10_2/www/";
                 _this.state.start('practiceModegradeSelectionScreen', true, false);
             }
         }
