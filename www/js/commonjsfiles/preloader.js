@@ -1037,7 +1037,7 @@ Game.preloader.prototype = {
         commonNavBar.addvideo(game);
 
         /*window.loadingFinished = true;
-    	
+    	//OdiyaquestionSounds
         game.state.add('videoSkip',Game.videoSkip);
         _this.state.start('videoSkip',true,false);*/
 

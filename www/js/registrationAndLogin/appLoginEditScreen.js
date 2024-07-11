@@ -76,17 +76,6 @@ Game.appLoginEditScreen.prototype = {
 			];
 		}
 
-		// if (_this.user.language == "English") {
-		// 	_this.fileCheck = [
-		// 		//[_this.basePath + "sounds", "sounds.zip"],
-		// 		[_this.basePath + "questionSounds/AL-ADD-G7/English", _this.user.language + "/EnglishquestionSounds.zip"],//ENG
-		// 		[_this.basePath + "assets/commonAssets", "Assets1.zip"],
-		// 		[_this.basePath + "assets/demoVideos", "Assets2.zip"],
-		// 		// [_this.basePath + "assets/exitAssets", _this.user.language ) + "/Assets3.zip"],
-		// 		[_this.basePath + "assets/gradeAssets", "Assets4.zip"]
-		// 		// [_this.basePath + "assets/gradeSelectionScreenAssets", _this.user.language ) + "/Assets5.zip"],
-		// 	];
-		// }
 		else if (_this.user.language == "Hindi") {
 			_this.fileCheck = [
 				[_this.basePath + "questionSounds/AL-ADD-G7/Hindi", _this.user.language + "/HINquestionSounds.zip"],
@@ -120,10 +109,7 @@ Game.appLoginEditScreen.prototype = {
 				[_this.basePath + "sounds", "sounds.zip"]
 			];
 		}
-		// else if(_this.user.language == "Gujarati")
-		// {
-
-		// }
+	
 		else if (_this.user.language == "Marathi") {
 			_this.fileCheck = [
 				[_this.basePath + "questionSounds/AL-ADD-G7/Marathi", _this.user.language + "/MarathiquestionSounds.zip"],
@@ -135,10 +121,7 @@ Game.appLoginEditScreen.prototype = {
 				[_this.basePath + "sounds", "sounds.zip"]
 			];
 		}
-		// else if(_this.user.language == "Telugu")
-		// {
-
-		// }
+	
 		else if (_this.user.language == "Tamil") {
 			_this.fileCheck = [
 				[_this.basePath + "questionSounds/AL-ADD-G7/Tamil", _this.user.language + "/TamilquestionSounds.zip"],
@@ -150,20 +133,6 @@ Game.appLoginEditScreen.prototype = {
 				[_this.basePath + "sounds", "sounds.zip"]
 			];
 		}
-		// else if(_this.user.language == "Urdu")
-		// {
-		// 	_this.fileCheck = [
-		// 	[_this.basePath+"questionSounds/1.1A/Urdu","Urdu.zip"],
-		// 	[_this.basePath+"assets/commonAssets","Assets1.zip"],
-		// 	[_this.basePath+"assets/demoVideos","Assets2.zip"],
-		// 	[_this.basePath+"assets/conversion","Assets3.zip"],
-		// 	[_this.basePath+"assets/questionSounds/shoppingGame","Assets4.zip"],
-		// 	[_this.basePath+"assets/gradeAssets/4.1","Assets5.zip"],
-		// 	[_this.basePath+"assets/gradeAssets/6.1","Assets6.zip"],
-		// 	[_this.basePath+"assets/DH1","Assets6New.zip"],
-		// 	[_this.basePath+"assets/AddNew","Assets16.zip"]
-		// 	];	
-		// }
 
 		_this.splash = game.add.sprite(game.world.centerX, game.world.centerY, 'registrationbg');
 		_this.splash.scale.setTo(1);
@@ -456,7 +425,7 @@ Game.appLoginEditScreen.prototype = {
 			_this.displayMessageAndDownloadAgain();
 
 			//_this.baseUrl = "https://abbmath.klp.org.in/abbchmprm/assets/bb5_0_5/";
-			_this.baseUrl = "https://abbmath.klp.org.in/bbplusplus/assets3/";
+			_this.baseUrl = "https://abbmath.klp.org.in/bbplusplus/assets2/";
 			//_this.baseUrl = "https://10.0.2.2/abbchmprm/assets/bb5_0_5/";
 			var fileTransfer = new FileTransfer();
 
@@ -468,7 +437,8 @@ Game.appLoginEditScreen.prototype = {
 					_this.progressPercentageTxt.text = Math.round((progressEvent.loaded / progressEvent.total) * 100) + "%";
 					_this.progressPercentageTxt2.text = Math.round((progressEvent.loaded / progressEvent.total) * 100) + "/100";
 
-					if (filename != "EnglishquestionSounds.zip" && filename != "HindiquestionSounds.zip" && filename != "KannadaquestionSounds.zip") {
+					if (filename != "EnglishquestionSounds.zip" && filename != "HindiquestionSounds.zip" && filename != "KannadaquestionSounds.zip"
+						&& filename != "OdiyaquestionSounds.zip") {
 						//console.log("Download !!!!!!");
 						// && filename != "OdiyaquestionSounds.zip" &&
 						//	filename != "MarathiquestionSounds.zip" && filename != "TamilquestionSounds.zip"
